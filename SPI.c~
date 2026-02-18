@@ -1,0 +1,21 @@
+#include <io.h>
+#include <delay.h>
+#define SS PORTB.2
+char data=0x63;
+
+void main(void)
+{
+    DDRB=0x2c; 
+    SPCR=(1<<MSTR)|(1<<SPE);
+    SPSR=(1<<SPI2X);
+while (1)
+    { 
+      SS=0;
+      delay_ms(100);
+      SPDR=data;
+      while(!(SPSR & (1<<SPIF)));//wait untill send is finished
+       SS=1;
+       delay_ms(100);
+    
+    }
+}
