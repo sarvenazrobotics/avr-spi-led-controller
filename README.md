@@ -67,4 +67,9 @@ Double Speed Enabled (SPI2X = 1)
 Polling-based transfer monitoring (checks SPIF flag)
 
 
+<p align="center">
+  <img src="images/SPI.png" width="600" height="400">
+</p>
+
+
 
