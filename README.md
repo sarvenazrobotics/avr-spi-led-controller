@@ -49,3 +49,19 @@ The SPI peripheral is configured using the AVR hardware registers listed below:
 | **SPSR** | SPI Status Register – Indicates transfer completion and enables double-speed mode      |
 | **SPDR** | SPI Data Register – Used to transmit and receive SPI data                              |
 
+
+## Configuration Details
+
+The SPI module is initialized with the following settings:
+
+Master Mode Enabled (MSTR = 1)
+
+SPI Enabled (SPE = 1)
+
+Clock Mode 0 (CPOL = 0, CPHA = 0)
+
+MSB First Data Order (DORD = 0)
+
+Double Speed Enabled (SPI2X = 1)
+
+Polling-based transfer monitoring (checks SPIF flag)
