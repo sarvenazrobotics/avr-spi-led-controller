@@ -99,4 +99,16 @@ LEDs connected to the outputs turn ON/OFF based on transmitted data.
 | 13  | OE    | Output Enable (active LOW) |
 
 
+## Summary
 
+This SPI system:
+
+Uses ATmega328P as Master
+
+Sends serial data via MOSI
+
+Uses SCK to clock data into 74HC595
+
+Uses ST_CP to latch outputs
+
+Controls LEDs through parallel outputs
