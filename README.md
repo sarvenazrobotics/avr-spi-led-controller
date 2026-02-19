@@ -40,3 +40,12 @@ The data is written to the SPI Data Register (SPDR).
 The program waits (polling) until transmission completes.
 
 The Slave Select line is controlled manually before and after transmission.
+
+## SPI Configuration
+The SPI peripheral is configured using the AVR hardware registers listed below:
+| Register | Description                                                                            |
+| -------- | -------------------------------------------------------------------------------------- |
+| **SPCR** | SPI Control Register – Enables SPI, selects Master mode, and configures clock settings |
+| **SPSR** | SPI Status Register – Indicates transfer completion and enables double-speed mode      |
+| **SPDR** | SPI Data Register – Used to transmit and receive SPI data                              |
+
