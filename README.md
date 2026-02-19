@@ -81,4 +81,13 @@ The received data is converted into parallel outputs (Q0–Q7).
 LEDs connected to the outputs turn ON/OFF based on transmitted data.
 
 
+| MCU Pin | SPI Function | Connected To           |
+| ------- | ------------ | ---------------------- |
+| PB3     | MOSI         | DS (Pin 14 of 74HC595) |
+| PB5     | SCK          | SH_CP (Pin 11)         |
+| PB2     | SS           | ST_CP (Pin 12)         |
+| GND     | GND          | GND                    |
+
+
+
 
