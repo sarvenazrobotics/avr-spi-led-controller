@@ -81,6 +81,7 @@ The received data is converted into parallel outputs (Q0–Q7).
 LEDs connected to the outputs turn ON/OFF based on transmitted data.
 
 
+## Microcontroller ATmega328P-SPI Master
 | MCU Pin | SPI Function | Connected To           |
 | ------- | ------------ | ---------------------- |
 | PB3     | MOSI         | DS (Pin 14 of 74HC595) |
@@ -88,6 +89,14 @@ LEDs connected to the outputs turn ON/OFF based on transmitted data.
 | PB2     | SS           | ST_CP (Pin 12)         |
 | GND     | GND          | GND                    |
 
+## 74HC595 Shift Register
+| Pin | Name  | Function                   |
+| --- | ----- | -------------------------- |
+| 14  | DS    | Serial Data Input          |
+| 11  | SH_CP | Shift Clock                |
+| 12  | ST_CP | Storage (Latch) Clock      |
+| 10  | MR    | Master Reset (active LOW)  |
+| 13  | OE    | Output Enable (active LOW) |
 
 
 
