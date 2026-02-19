@@ -67,9 +67,17 @@ Double Speed Enabled (SPI2X = 1)
 Polling-based transfer monitoring (checks SPIF flag)
 
 
+## SPI Communication
 <p align="center">
   <img src="images/SPI.png" width="600" height="400">
 </p>
+The microcontroller sends serial data using SPI.
+
+The 74HC595 receives the serial data.
+
+The received data is converted into parallel outputs (Q0–Q7).
+
+LEDs connected to the outputs turn ON/OFF based on transmitted data.
 
 
 
