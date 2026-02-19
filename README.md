@@ -66,10 +66,5 @@ Double Speed Enabled (SPI2X = 1)
 
 Polling-based transfer monitoring (checks SPIF flag)
 
-## Initialization Code Snippet
-DDRB = 0x2C;                        // Configure MOSI, SCK, SS as output
-SPCR = (1<<MSTR) | (1<<SPE);        // Enable SPI in Master mode
-SPSR = (1<<SPI2X);                  // Enable double SPI speed
 
-This configuration allows the microcontroller to operate as an SPI Master and transmit LED control data to a connected slave device.
 
