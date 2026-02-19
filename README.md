@@ -17,3 +17,26 @@ Software-controlled Slave Select (SS)
 Two independent LED toggle signals
 
 Simple timing control using delays
+
+
+## How It Works
+
+The AVR microcontroller initializes SPI as Master.
+
+Two flags (flag_led1 and flag_led2) toggle at different intervals:
+
+LED1 toggles every 500 ms
+
+LED2 toggles every 1 second
+
+The flag states are packed into a 2-bit data frame:
+
+Bit 0 → LED1
+
+Bit 1 → LED2
+
+The data is written to the SPI Data Register (SPDR).
+
+The program waits (polling) until transmission completes.
+
+The Slave Select line is controlled manually before and after transmission.
