@@ -71,6 +71,7 @@ Polling-based transfer monitoring (checks SPIF flag)
 <p align="center">
   <img src="images/SPI.png" width="600" height="400">
 </p>
+
 The microcontroller sends serial data using SPI.
 
 The 74HC595 receives the serial data.
